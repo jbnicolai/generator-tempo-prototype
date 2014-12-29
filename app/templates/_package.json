@@ -1,5 +1,18 @@
 {
-  "name": "<%= _.slugify(projectName) %>",
-  "version": "0.1.0",
-  "dependencies": {}
+	"name": "<%= _.slugify(projectName) %>",
+	"version": "0.1.0",
+	"description": "<%= projectDescription %>",
+	"main": "app/index.js",
+  	"scripts": {
+  		"prestart": "subl .",
+  		"start": "node ./live-server.js"
+  	},
+	"dependencies": {
+    	"live-server": "^0.6.2"		
+		},
+	"author": "<%= projectAuthor %>",
+	"license": "MIT"
 }
+
+
+  

@@ -20,9 +20,19 @@ module.exports = yeoman.generators.Base.extend({
 
     var prompts = [{
       type    : 'input',
+      name    : 'projectAuthor',
+      message : 'What is your name?',
+      default : 'Arnþór Snær Sævarsson' // Default to current author 
+    },{
+      type    : 'input',
       name    : 'projectName',
       message : 'What is your project name?',
-      default : 'A Team Report' // Default to current folder name
+      default : 'A Team Report' // Default name
+    },{
+      type    : 'input',
+      name    : 'projectDescription',
+      message : 'Describe the project, user POV:',
+      default : 'View a report about my team' // Default name
     },{
       type: "list",
       name: "entity",
@@ -40,6 +50,8 @@ module.exports = yeoman.generators.Base.extend({
     this.prompt(prompts, function (props) {
       this.someOption = props.someOption;
       this.projectName = props.projectName;
+      this.projectDescription = props.projectDescription;
+      this.projectAuthor = props.projectAuthor;
       this.entity = props.entity;
       this.log(String(this.anotherOption));
       done();
@@ -52,6 +64,7 @@ module.exports = yeoman.generators.Base.extend({
       this.template('_package.json', 'package.json');
       this.template('_bower.json', 'bower.json');
       this.template('README.md', 'README.md');
+      this.template('live-server.js', 'live-server.js');
     },
 
     projectfiles: function () {
@@ -64,4 +77,5 @@ module.exports = yeoman.generators.Base.extend({
       skipInstall: this.options['skip-install']
     });
   }
+
 });
