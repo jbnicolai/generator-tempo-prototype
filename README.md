@@ -1,27 +1,11 @@
-# generator-tempo-prototype [![Build Status](https://secure.travis-ci.org/arnthorsnaer/generator-tempo-prototype.png?branch=master)](https://travis-ci.org/arnthorsnaer/generator-tempo-prototype)
+# generator-tempo-prototype 
+![Tempo Logo](https://tempoplugin.jira.com/wiki/download/attachments/22315019/TD?version=1&modificationDate=1367856396377&api=v2 =250px)
 
-> [Yeoman](http://yeoman.io) generator
+> A [Yeoman](http://yeoman.io) generator for Tempo prototype
 
+# What is this?
 
-## Getting Started
-
-### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```bash
-npm install -g yo
-```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+A Yeoman generator for Tempo UI prototype projects. It generates an Angular skeleton project with a Tempo template with AUI (Atlassian User Interface) UI elements. The skeleton project is optimized for rapidly creating prototypes and supports maintaining datasets for different scenarios. 
 
 To install generator-tempo-prototype from npm, run:
 
@@ -35,12 +19,43 @@ Finally, initiate the generator:
 yo tempo-prototype
 ```
 
-### Getting To Know Yeoman
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+# What is Tempo?
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+A set of agile PPM solutions that seamlessly integrate into Atlassian's JIRA platform.
 
+[Tempo for JIRA](http://www.tempoplugin.com)
+
+
+
+# What is a UI prototype?
+
+A piece of code that enables you to design and envision the system and explore the problem space with your stakeholders.
+
+For our purposes we want high fidelity prototype but with minimal overhead during the design process. We assume our prototype projects are prototype only, and will not be further developed into an actual system. Many components can be used from the prototype since most of it consists of HTML, CSS and JavaScript 
+
+[Wikipedia on Software prototyping](http://en.wikipedia.org/wiki/Software_prototyping)
+
+# What is AUI?
+
+A tailor-made frontend library for creating a user interface according to the Atlassian Design Guidelines.
+
+# What is AngularJS?
+
+A client side MVW (Model-View-Whatever) JavaScript framework.
+
+[AngularJS](http://angularjs.org/)
+ 
+
+# What is Yeoman?
+
+A project scaffolding tool to help you kickstart new projects. 
+
+To install Yeoman from your terminal:
+
+```bash
+npm install -g yo
+```
 
 ## License
 

@@ -1,7 +1,7 @@
 {
   "name": "generator-tempo-prototype",
   "version": "0.1.0",
-  "description": "A generator for Tempo prototype projects",
+  "description": "A Yeoman generator for Tempo UI prototype projects",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "arnthorsnaer/generator-tempo-prototype",
