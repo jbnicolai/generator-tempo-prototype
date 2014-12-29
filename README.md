@@ -35,7 +35,9 @@ For our purposes we want high fidelity prototype but with minimal overhead durin
 
 ## What is AUI?
 
-A tailor-made frontend library for creating a user interface according to the Atlassian Design Guidelines.
+Stands for Atlassian User Interface. A tailor-made frontend library for creating a user interface according to the Atlassian Design Guidelines. [Check out AUI](http://angularjs.org/)
+
+https://docs.atlassian.com/aui/latest/
 
 ## What is AngularJS?
 
