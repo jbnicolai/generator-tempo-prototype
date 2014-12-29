@@ -1,9 +1,10 @@
-# generator-tempo-prototype 
-![Tempo Logo](https://tempoplugin.jira.com/wiki/download/attachments/22315019/TD?version=1&modificationDate=1367856396377&api=v2 =48px)
+# Tempo UI Prototype Generator for Yeoman
+
+![Tempo Yeoman Logo](https://raw.githubusercontent.com/arnthorsnaer/generator-tempo-prototype/master/yo_tempo.png)
 
 > A [Yeoman](http://yeoman.io) generator for Tempo prototype
 
-# What is this?
+## What is this?
 
 A Yeoman generator for Tempo UI prototype projects. It generates an Angular skeleton project with a Tempo template with AUI (Atlassian User Interface) UI elements. The skeleton project is optimized for rapidly creating prototypes and supports maintaining datasets for different scenarios. 
 
@@ -20,7 +21,7 @@ yo tempo-prototype
 ```
 
 
-# What is Tempo?
+## What is Tempo?
 
 A set of agile PPM solutions that seamlessly integrate into Atlassian's JIRA platform.
 
@@ -28,7 +29,7 @@ A set of agile PPM solutions that seamlessly integrate into Atlassian's JIRA pla
 
 
 
-# What is a UI prototype?
+## What is a UI prototype?
 
 A piece of code that enables you to design and envision the system and explore the problem space with your stakeholders.
 
@@ -36,22 +37,22 @@ For our purposes we want high fidelity prototype but with minimal overhead durin
 
 [Wikipedia on Software prototyping](http://en.wikipedia.org/wiki/Software_prototyping)
 
-# What is AUI?
+## What is AUI?
 
 A tailor-made frontend library for creating a user interface according to the Atlassian Design Guidelines.
 
-# What is AngularJS?
+## What is AngularJS?
 
 A client side MVW (Model-View-Whatever) JavaScript framework.
 
 [AngularJS](http://angularjs.org/)
  
 
-# What is Yeoman?
+## What is Yeoman?
 
 A project scaffolding tool to help you kickstart new projects. 
 
-To install Yeoman from your terminal:
+To install Yeoman, run:
 
 ```bash
 npm install -g yo
