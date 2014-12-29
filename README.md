@@ -2,7 +2,7 @@
 
 ![Tempo Yeoman Logo](https://raw.githubusercontent.com/arnthorsnaer/generator-tempo-prototype/master/yo_tempo.png)
 
-> A [Yeoman](http://yeoman.io) generator for Tempo prototype
+> A Yeoman generator for Tempo prototype
 
 ## What is this?
 
@@ -23,9 +23,7 @@ yo tempo-prototype
 
 ## What is Tempo?
 
-A set of agile PPM solutions that seamlessly integrate into Atlassian's JIRA platform.
-
-[Tempo for JIRA](http://www.tempoplugin.com)
+A set of agile PPM solutions that seamlessly integrate into Atlassian's JIRA platform. [Check out Tempo for JIRA](http://www.tempoplugin.com)
 
 
 
@@ -33,9 +31,7 @@ A set of agile PPM solutions that seamlessly integrate into Atlassian's JIRA pla
 
 A piece of code that enables you to design and envision the system and explore the problem space with your stakeholders.
 
-For our purposes we want high fidelity prototype but with minimal overhead during the design process. We assume our prototype projects are prototype only, and will not be further developed into an actual system. Many components can be used from the prototype since most of it consists of HTML, CSS and JavaScript 
-
-[Wikipedia on Software prototyping](http://en.wikipedia.org/wiki/Software_prototyping)
+For our purposes we want high fidelity prototype but with minimal overhead during the design process. We assume our prototype projects are prototype only, and will not be further developed into an actual system. Many components can be used from the prototype since most of it consists of HTML, CSS and JavaScript. [Check out Software prototyping on Wikipedia](http://en.wikipedia.org/wiki/Software_prototyping)
 
 ## What is AUI?
 
@@ -43,14 +39,12 @@ A tailor-made frontend library for creating a user interface according to the At
 
 ## What is AngularJS?
 
-A client side MVW (Model-View-Whatever) JavaScript framework.
-
-[AngularJS](http://angularjs.org/)
+A client side MVW (Model-View-Whatever) JavaScript framework. [Check out AngularJS](http://angularjs.org/)
  
 
 ## What is Yeoman?
 
-A project scaffolding tool to help you kickstart new projects. 
+A project scaffolding tool to help you kickstart new projects. [Check out Yeoman](http://yeoman.io)
 
 To install Yeoman, run:
 
