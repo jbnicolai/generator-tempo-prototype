@@ -1,13 +1,18 @@
 'use strict';
+var path = require('path');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var _ = require('lodash');
 var _s = require('underscore.string');
 
+
 module.exports = yeoman.generators.Base.extend({
   initializing: function () {
     this.pkg = require('../package.json');
+
+    //suggest the directory name as a project name
+    this.suggestedname = this._.titleize(this._.humanize(path.basename(process.cwd())));
   },
 
   prompting: function () {
@@ -27,7 +32,7 @@ module.exports = yeoman.generators.Base.extend({
       type    : 'input',
       name    : 'projectName',
       message : 'What is your project name?',
-      default : 'A Team Report' // Default name
+      default : this.suggestedname // Default name
     },{
       type    : 'input',
       name    : 'projectDescription',
@@ -64,7 +69,7 @@ module.exports = yeoman.generators.Base.extend({
       this.template('_package.json', 'package.json');
       this.template('_bower.json', 'bower.json');
       this.template('README.md', 'README.md');
-      this.template('live-server.js', 'live-server.js');
+      this.copy('live-server.js', 'live-server.js');
     },
 
     projectfiles: function () {
