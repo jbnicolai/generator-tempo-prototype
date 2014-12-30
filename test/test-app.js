@@ -19,9 +19,7 @@ describe('tempo-prototype:app', function () {
   it('creates files', function () {
     assert.file([
       'bower.json',
-      'package.json',
-      '.editorconfig',
-      'README.md'
+      'package.json' // arnthorsnaer : not really sure I want to thoroughly test this
     ]);
   });
 });
