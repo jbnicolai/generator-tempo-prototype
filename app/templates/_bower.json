@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery":"~1.8.3",
     "angular": "*",
-    "angular-route": "*",
+    "angular-route": "https://github.com/angular/bower-angular-route.git#master",
     "aui": "git@bitbucket.org:atlassian/aui-dist.git#master"
   }
 }
