@@ -1,4 +1,4 @@
-var protoApp = angular.module('app', ['ngRoute'])
+var app = angular.module('app', ['ngRoute'])
 
 .config(function($routeProvider) {
   $routeProvider
