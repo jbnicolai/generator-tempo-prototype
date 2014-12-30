@@ -6,6 +6,7 @@ angular.module('app').controller('contextCtrl', ['$scope', '$http', 'contextData
 		"env":"Teams"
 	}
 
+	console.log("context js");
 	$scope.teams = contextData.getTeams().teams;
 
 }])

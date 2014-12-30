@@ -6,6 +6,8 @@ angular.module('app').controller('interfaceCtrl', ['$scope', '$http', 'interface
 
 	$scope.selectedData = $scope.userData[Object.keys($scope.userData)[0]];
 
+	console.log("interface js");
+
 	$scope.dataToggle = function dataToggle(dataSetName) {
 		for(var key in $scope.userData) {
 			if(key === dataSetName) {
