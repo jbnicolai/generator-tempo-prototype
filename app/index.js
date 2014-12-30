@@ -1,4 +1,5 @@
 'use strict';
+
 var path = require('path');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
@@ -74,6 +75,8 @@ module.exports = yeoman.generators.Base.extend({
 
     projectfiles: function () {
       this.copy('editorconfig', '.editorconfig');
+      this.copy('bowerrc', '.bowerrc');
+
     }
   },
 

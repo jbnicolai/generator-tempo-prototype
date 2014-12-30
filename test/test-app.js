@@ -21,7 +21,7 @@ describe('tempo-prototype:app', function () {
       'bower.json',
       'package.json',
       '.editorconfig',
-      '.jshintrc'
+      'README.md'
     ]);
   });
 });
