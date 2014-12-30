@@ -4,7 +4,7 @@
 	"description": "<%= projectDescription %>",
 	"main": "app/index.js",
   	"scripts": {
-  		"prestart": "subl .",
+  		"prestart": "subl ./app",
   		"start": "node ./live-server.js"
   	},
 	"dependencies": {

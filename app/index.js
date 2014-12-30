@@ -69,8 +69,11 @@ module.exports = yeoman.generators.Base.extend({
     app: function () {
       this.template('_package.json', 'package.json');
       this.template('_bower.json', 'bower.json');
-      this.template('README.md', 'README.md');
       this.copy('live-server.js', 'live-server.js');
+      this.template('README.md', 'README.md');
+
+      this.directory('app', 'app');
+
     },
 
     projectfiles: function () {
