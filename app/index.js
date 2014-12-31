@@ -73,7 +73,8 @@ module.exports = yeoman.generators.Base.extend({
       this.template('README.md', 'README.md');
 
       this.directory('app', 'app');
-
+      this.template('app/index.html', 'app/index.html');
+      this.template('app/context/context.js','app/context/context.js');
     },
 
     projectfiles: function () {

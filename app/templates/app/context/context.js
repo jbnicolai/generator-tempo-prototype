@@ -2,8 +2,8 @@ angular.module('myApp').controller('contextCtrl', ['$scope', '$http', 'contextDa
 	function($scope, $http, contextData, interfaceData) {
 
 	$scope.config = {
-		"title":"Prototype Title",
-		"env":"Teams"
+		"title":"<%= projectName %>",
+		"entity":"<%= entity %>"
 	}
 
 	$scope.customData = interfaceData.getData();

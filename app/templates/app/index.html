@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-		<title>AUI - Team backlog</title>
-		<link rel="icon" type="image/png" href="images/team.png" />
+		<title><%= projectName %></title>
+		<link rel="icon" type="image/png" href="images/<%= entity %>.png" />
 
 		<script src="bower_components/jquery/jquery.js"></script>
 		<link rel="stylesheet" href="../bower_components/aui/aui/css/aui.css" media="all">
@@ -58,13 +58,13 @@
 						<div class="aui-page-header-image">
 							<div class="aui-avatar aui-avatar-xlarge aui-avatar-project">
 								<div class="aui-avatar-inner">
-									<img src="images/team.png" width="48">
+									<img src="images/<%= entity %>.png" width="48">
 								</div>
 							</div>
 						</div>
 						<div class="aui-page-header-main">
 							<ol class="aui-nav aui-nav-breadcrumbs">
-                       			<li><a href="#">{{config.env}}<span class="aui-icon-dropdown"></span></a></li>
+                       			<li><a href="#">{{config.entity}}<span class="aui-icon-dropdown"></span></a></li>
 		                    </ol>
 		                    <h1 ng-bind="config.title"></h1>
 		                    <ol class="aui-nav ">
