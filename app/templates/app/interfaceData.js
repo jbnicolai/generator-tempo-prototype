@@ -1,7 +1,7 @@
-angular.module('app').service('interfaceData', function() {
+angular.module('myApp').service('interfaceData', function() {
 	var priceRates = {
 			"dataSet1": [{
-				"name":"Designers",
+				"name":"Designers1",
 				"issueTypes":[
 					{
 						"Story": {
@@ -17,7 +17,7 @@ angular.module('app').service('interfaceData', function() {
 					}]
 				},
 				{
-				"name":"Developers",
+				"name":"Developers1",
 				"issueTypes":[
 					{
 						"Story": {
@@ -33,7 +33,7 @@ angular.module('app').service('interfaceData', function() {
 					}]
 				},
 				{
-				"name":"Expenses",
+				"name":"Expenses1",
 				"issueTypes":[
 					{
 						"Travel": {
@@ -48,7 +48,7 @@ angular.module('app').service('interfaceData', function() {
 				}
 			],
 		"dataSet2": [{
-				"name":"Designers",
+				"name":"Designers2",
 				"issueTypes":[
 					{
 						"Story": {
@@ -64,7 +64,7 @@ angular.module('app').service('interfaceData', function() {
 					}]
 				},
 				{
-				"name":"Developers",
+				"name":"Developers2",
 				"issueTypes":[
 					{
 						"Story": {
@@ -80,7 +80,7 @@ angular.module('app').service('interfaceData', function() {
 					}]
 				},
 				{
-				"name":"Expenses",
+				"name":"Expenses2",
 				"issueTypes":[
 					{
 						"Travel": {

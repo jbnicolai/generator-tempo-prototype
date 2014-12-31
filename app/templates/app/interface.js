@@ -1,20 +1,17 @@
-angular.module('app').controller('interfaceCtrl', ['$scope', '$http', 'interfaceData', 
+angular.module('myApp').controller('interfaceCtrl', ['$scope', '$http', 'interfaceData',
 	function($scope, $http, interfaceData) {
 
-
+	/*  userData withholds all the data from interfaceData  */
 	$scope.userData = interfaceData.getData();
 
-	$scope.selectedData = $scope.userData[Object.keys($scope.userData)[0]];
+	/*  selectedData is the portion of the data currently beeing viewed  */
+	$scope.selectedData = $scope.contextData;
 
-	console.log("interface js");
+	/*  Watches changes for selected data and updates  */
+	$scope.$on('dataSelected', function(event, args){
+		$scope.selectedData = $scope.contextData;
+	});
 
-	$scope.dataToggle = function dataToggle(dataSetName) {
-		for(var key in $scope.userData) {
-			if(key === dataSetName) {
-				$scope.selectedData = $scope.userData[key];
-			}
-			
-		}
-	};
+	/*  Add data manipulation and joy  */
 
 }])

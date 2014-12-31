@@ -9,7 +9,8 @@
 		<script src="bower_components/jquery/jquery.js"></script>
 		<link rel="stylesheet" href="../bower_components/aui/aui/css/aui.css" media="all">
 		
-		<script src="bower_components/aui/aui/js/aui.js"></script>
+		<!--<script src="bower_components/aui/aui/js/aui.js"></script>-->
+		<script src="//aui-cdn.atlassian.com/aui-adg/5.8.1/js/aui.js"></script>
 		<script src="bower_components/aui/aui/js/aui-soy.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.min.js"></script>
@@ -28,7 +29,7 @@
 				
 
 	</head>
-	<body id="aui-flatpack" class="aui-layout aui-theme-default aui-page-fluid" ng-app="app" ng-controller="contextCtrl" >
+	<body id="aui-flatpack" class="aui-layout aui-theme-default aui-page-fluid" ng-app="myApp" ng-controller="contextCtrl" >
 		<div id="page">
 			
 
@@ -39,7 +40,7 @@
 							<h1 id="logo" class="aui-header-logo aui-header-logo-aui inline"><a href="../index.html"><span class="aui-header-logo-device">AUI</span>
 							</a></h1>
 							<div class="dataToggle">
-									<button ng-repeat="(key,val) in userData" class="aui-button" ng-click="dataToggle(key)">{{key}}</button>
+									<button ng-repeat="(key,val) in customData" class="aui-button" ng-click="dataToggle(key)">{{key}}</button>
 							</div>
 						</div>
 					</div>

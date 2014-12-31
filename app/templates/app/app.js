@@ -1,9 +1,9 @@
-var app = angular.module('app', ['ngRoute'])
+var myApp = angular.module('myApp', ['ngRoute'])
 
 .config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl:'interface.html'
+      templateUrl:'interface.html',
     })
     .otherwise({
       redirectTo:'/'

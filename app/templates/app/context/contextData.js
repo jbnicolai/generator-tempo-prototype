@@ -1,4 +1,4 @@
-angular.module('app').service('contextData', function() {
+angular.module('myApp').service('contextData', function() {
 	var teams = {
 			"teams": [{
 				"name":"GreenCloud Tango",
