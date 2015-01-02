@@ -5,11 +5,11 @@ angular.module('tempoApp').controller('interfaceCtrl', ['$scope', '$http', 'inte
 	$scope.userData = interfaceData.getData();
 
 	/*  selectedData is the portion of the data currently beeing viewed  */
-	$scope.selectedData = $scope.contextData;
+	$scope.model = $scope.contextData;
 
 	/*  Watches changes for selected data and updates  */
 	$scope.$on('dataSelected', function(event, args){
-		$scope.selectedData = $scope.contextData;
+		$scope.model = $scope.contextData;
 	});
 
 	/*  Add data manipulation and joy  */

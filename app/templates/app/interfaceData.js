@@ -1,103 +1,41 @@
 angular.module('tempoApp').service('interfaceData', function() {
-	var priceRates = {
-			"dataSet1": [{
-				"name":"Designers1",
-				"issueTypes":[
-					{
-						"Story": {
-							"rate":100.00,
-							"hours": 71.0 
-						}
-					},
-					{
-						"Improvement": {
-							"rate":100.00,
-							"hours": 67.0
-						}
-					}]
+	var scenarios = {
+		"Golden Path": {
+			"period": {
+				"name" : "September '14",
+				"dates" : "Sep 1 - Sep 30, 2014"
+			},
+			"entries" : [
+			{
+				"name":"Designers1"
+			},
+			{
+				"name":"Developers1"
+			},
+			{
+				"name":"Product Owners1"
+			}]
+		},
+		"Empty State": {
+			"period": {
+				"name" : "November '14",
+				"dates" : "Nov 1 - Nov 31, 2014"
+				},				
+			"entries" : [
+				{
+					"name":"Designers2"
 				},
 				{
-				"name":"Developers1",
-				"issueTypes":[
-					{
-						"Story": {
-							"rate":100.00,
-							"hours": 73.2 
-						}
-					},
-					{
-						"Improvement": {
-							"rate":100.00,
-							"hours": 22.3
-						}
-					}]
+					"name":"Developers2"
 				},
 				{
-				"name":"Expenses1",
-				"issueTypes":[
-					{
-						"Travel": {
-							"amount": 830.00 
-						}
-					},
-					{
-						"Food": {
-							"amount": 621.00
-						}
-					}]
-				}
-			],
-		"dataSet2": [{
-				"name":"Designers2",
-				"issueTypes":[
-					{
-						"Story": {
-							"rate":200.00,
-							"hours": 61.0 
-						}
-					},
-					{
-						"Improvement": {
-							"rate":200.00,
-							"hours": 77.0
-						}
-					}]
-				},
-				{
-				"name":"Developers2",
-				"issueTypes":[
-					{
-						"Story": {
-							"rate":200.00,
-							"hours": 73.2 
-						}
-					},
-					{
-						"Improvement": {
-							"rate":200.00,
-							"hours": 32.3
-						}
-					}]
-				},
-				{
-				"name":"Expenses2",
-				"issueTypes":[
-					{
-						"Travel": {
-							"amount": 830.00 
-						}
-					},
-					{
-						"Food": {
-							"amount": 621.00
-						}
-					}]
-				}
-			]
+					"name":"Product Owners2"
+				}]
+			}
 		};
 		return {
 		getData: function () {
-			return priceRates;
+			return scenarios;
 		}
 	}
 })

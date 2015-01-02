@@ -1,3 +1,44 @@
-<div ng-controller="interfaceCtrl">
-	<div ng-repeat="selected in selectedData">{{selected.name}}</div>
+<span ng-controller="interfaceCtrl">
+<nav style="margin-top:-1px" class="aui-navgroup aui-navgroup-horizontal">
+    <div style="text-align: center;" class="aui-navgroup-inner">
+        <div class="aui-navgroup-primary aui-group aui-group-trio ">
+            <div class="aui-item">
+                <ul class="aui-nav">
+                    <li><a  style="color:#333;" href="budget-tracking_monthly.html">Filter: No Filter <span class="aui-icon-dropdown"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="aui-item" style="width:350px;">                  
+                <ul class="aui-nav">
+                    <li class="toolbar-item"><a style="color:#333;padding-left:10px;padding-right:10px;font-weight:bold;" href="#">< </a></li>
+                    <li class="toolbar-item"><a style="color:#333;padding-left:5px;padding-right:5px;" href="#">{{model.period.name}} </a> </li>
+                    <li class="toolbar-item"><a style="color:#333;padding-left:5px;padding-right:5px;" href="#"><span style="color:#999"; >{{model.period.dates}}</span> </a> </li>
+                    <li class="toolbar-item"><a style="color:#333;padding-left:10px;padding-right:10px;font-weight:bold;" href="#">></a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div style="float: right;"class="aui-item">                  
+                <ul class="aui-nav">
+                    <li><a id="view" style="color:#333;" href="#">Export <span class="aui-icon-dropdown"></span></a></li>
+                </ul>
+
+            </div>
+
+        </div><!-- .aui-navgroup-primary -->
+
+    </div><!-- .aui-navgroup-inner -->
+</nav>
+
+
+<div class="aui-page-panel-inner">
+    <section class="aui-page-panel-content">
+    <h2>{{app.title}}</h2>
+
+		<div ng-repeat="entry in model.entries">{{entry.name}}</div>
+
+	</section>
 </div>
+</span>
