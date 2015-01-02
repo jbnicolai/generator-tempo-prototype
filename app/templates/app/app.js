@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute'])
+var tempoApp = angular.module('tempoApp', ['ngRoute'])
 
 .config(function($routeProvider) {
   $routeProvider

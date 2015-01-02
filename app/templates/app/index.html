@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" ng-app="tempoApp" ng-controller="contextCtrl" >
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-		<title><%= projectName %></title>
-		<link rel="icon" type="image/png" href="images/<%= entity %>.png" />
+		<title>{{app.title}} - GreenCloud</title>
+
+		<link rel="icon" type="image/png" href="images/{{app.entity}}.png" />
+
 
 		<script src="bower_components/jquery/jquery.js"></script>
-		<link rel="stylesheet" href="../bower_components/aui/aui/css/aui.css" media="all">
-		
-		<!--<script src="bower_components/aui/aui/js/aui.js"></script>-->
+
+		<link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.8.1/css/aui.css" media="all">		
 		<script src="//aui-cdn.atlassian.com/aui-adg/5.8.1/js/aui.js"></script>
-		<script src="bower_components/aui/aui/js/aui-soy.js"></script>
+
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.min.js"></script>
-
 		
 		<script src="app.js"></script>
 
@@ -29,7 +29,7 @@
 				
 
 	</head>
-	<body id="aui-flatpack" class="aui-layout aui-theme-default aui-page-fluid" ng-app="myApp" ng-controller="contextCtrl" >
+	<body id="aui-flatpack" class="aui-layout aui-theme-default aui-page-fluid"  >
 		<div id="page">
 			
 
@@ -58,19 +58,17 @@
 						<div class="aui-page-header-image">
 							<div class="aui-avatar aui-avatar-xlarge aui-avatar-project">
 								<div class="aui-avatar-inner">
-									<img src="images/<%= entity %>.png" width="48">
+									<img src="images/{{app.entity}}.png" width="48">
 								</div>
 							</div>
 						</div>
 						<div class="aui-page-header-main">
 							<ol class="aui-nav aui-nav-breadcrumbs">
-                       			<li><a href="#">{{config.entity}}<span class="aui-icon-dropdown"></span></a></li>
+                       			<li><a href="#">{{app.entity}}<span class="aui-icon-dropdown"></span></a></li>
 		                    </ol>
-		                    <h1 ng-bind="config.title"></h1>
+		                    <h1>{{entity.name}}</h1>
 		                    <ol class="aui-nav ">
-		                        <li style="float:left;margin-right:15px;"><a href="#">Overview </a></li>
-		                        <li style="float:left;margin-right:15px;"><a style="font-weight:bold;color:#333;" href="#">Teams</a></li> 
-		                        <li style="float:left;margin-right:15px;"><a href="#">Timesheet </a></li>                   
+		                        <li ng-repeat="page in entity.pages" style="float:left;margin-right:15px;"><a ng-class="isCurrentPage(page) ? 'active' : ''" href="#">{{page}} </a></li>
 		                    </ol>
 						</div>
 					</div>

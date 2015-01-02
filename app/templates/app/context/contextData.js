@@ -1,57 +1,69 @@
-angular.module('myApp').service('contextData', function() {
-	var teams = {
-			"teams": [{
-				"name":"GreenCloud Tango",
-				"lead":"Robert Penn",
-				"program":"GreenCloud Product Development",
-				"Summary":"Tango Product Development Team"
+angular.module('tempoApp').service('contextData', function() {
+	var entities = {
+			"User": [{
+				"name":"Elias Brown",
+				"lead":"John Steel",
+				"parentEntity":"Custom Web Development",
+				"pages": ["Overview","Timesheet","Configuration"]
 			},
 			{
+				"name":"Jessie Rosewood",
+				"lead":"Robert Penn",
+				"parentEntity":"GreenCloud Tango",
+				"pages": ["Overview","Timesheet","Configuration"]
+			}],
+			"Team": [{
 				"name":"Custom Web Development",
 				"lead":"Robert Penn",
-				"program":"GreenCloud Consulting",
-				"Summary":"Custom Web Development Team"
+				"parentEntity":"GreenCloud Consulting",
+				"pages": ["Overview","Timesheet","Configuration"]
 			},
 			{
-				"name":"GreenCloud Azome",
-				"lead":"Erica Jefferson",
-				"program":"GreenCloud Product Development",
-				"Summary":"Develop Azome game app"
-			},
-			{
-				"name":"GreenCloud Management",
-				"lead":"John Steel",
-				"program":"GreenCloud Operation",
-				"Summary":"The GreenCloud Management Team"
-			},
-			{
-				"name":"GreenCloud Wikkieea",
-				"lead":"Erica Jefferson",
-				"program":"GreenCloud Product Development",
-				"Summary":"Wikkieea Development Cloud Development Team"
-			},
-			{
-				"name":"Marketing",
-				"lead":"Tara Flynn",
-				"program":"GreenCloud Operation",
-				"Summary":"GreenCloud's Marketing Team"
-			},
-			{
-				"name":"Service & Support",
-				"lead":"Laura Penn",
-				"program":"GreenCloud Consulting",
-				"Summary":"Service desk and bugmasters"
-			},
-			{
-				"name":"The New Dev Team",
+				"name":"GreenCloud Tango",
 				"lead":"Robert Penn",
-				"program":"",
-				"Summary":"The New Development Team"
-			}]
+				"parentEntity":"GreenCloud Product Development",
+				"pages": ["Overview","Timesheet","Configuration"]
+			}],
+			"Program": [{
+				"name":"GreenCloud Product Development",
+				"lead":"",
+				"parentEntity":"GreenCloud Software",
+				"pages": ["Overview","Timesheet","Configuration"]
+			},
+			{
+				"name":"GreenCloud Consulting",
+				"lead":"",
+				"parentEntity":"GreenCloud Software",
+				"pages": ["Overview","Timesheet","Configuration"]
+			}],	
+			"Account": [{
+				"name":"Tango CAPEX",
+				"lead":"Robert Penn",
+				"parentEntity":"GreenCloud",
+				"pages": ["Overview","Timesheet","Configuration"]
+			},
+			{
+				"name":"Health History Secure Web",
+				"lead":"Erica Jefferson",
+				"parentEntity":"Ministry of Health",
+				"pages": ["Overview","Timesheet","Configuration"]
+			}],	
+			"Customer": [{
+				"name":"GreenCloud",
+				"lead":"John Steel",
+				"parentEntity":"GreenCloud Software",
+				"pages": ["Overview","Timesheet","Configuration"]
+			},
+			{
+				"name":"Ministry of Health",
+				"lead":"John Steel",
+				"parentEntity":"GreenCloud Software",
+				"pages": ["Overview","Timesheet","Configuration"]
+			}],		
 		};
 		return {
-		getTeams: function () {
-			return teams;
+		getEntities: function () {
+			return entities;
 		}
 	}
 })

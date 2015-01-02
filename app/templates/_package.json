@@ -4,15 +4,17 @@
 	"description": "<%= projectDescription %>",
 	"main": "app/index.js",
   	"scripts": {
-  		"prestart": "subl ./app",
-  		"start": "node ./live-server.js"
+	    "postinstall": "bower install",
+	    "prestart": "npm install",
+  		"start": "node ./live-server.js & subl ./app & subl ./app/interface.html"
   	},
 	"dependencies": {
     	"live-server": "^0.6.2"		
 		},
+	"repository": {
+	  "type": "git",
+	  "url": "https://stash.t.is:7990/scm/tma/tempo-ux.git"
+	},
 	"author": "<%= projectAuthor %>",
 	"license": "MIT"
 }
-
-
-  

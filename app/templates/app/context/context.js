@@ -1,13 +1,24 @@
-angular.module('myApp').controller('contextCtrl', ['$scope', '$http', 'contextData', 'interfaceData',
+angular.module('tempoApp').controller('contextCtrl', ['$scope', '$http', 'contextData', 'interfaceData',
 	function($scope, $http, contextData, interfaceData) {
 
-	$scope.config = {
+	$scope.app = {
 		"title":"<%= projectName %>",
-		"entity":"<%= entity %>"
+		"entity":"<%= entity %>",
+		"number": 1
 	}
 
 	$scope.customData = interfaceData.getData();
-	$scope.teams = contextData.getTeams().teams;
+	$scope.entity = contextData.getEntities()[$scope.app.entity][$scope.app.number];
+	$scope.entity.pages.splice(2, 0, $scope.app.title);
+
+
+	$scope.isCurrentPage = function isCurrentPage(pageName){
+		if ($scope.app.title===pageName) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	$scope.contextData = $scope.customData[Object.keys($scope.customData)[0]];
 

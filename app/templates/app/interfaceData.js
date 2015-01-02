@@ -1,4 +1,4 @@
-angular.module('myApp').service('interfaceData', function() {
+angular.module('tempoApp').service('interfaceData', function() {
 	var priceRates = {
 			"dataSet1": [{
 				"name":"Designers1",

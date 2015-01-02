@@ -1,4 +1,4 @@
-angular.module('myApp').controller('interfaceCtrl', ['$scope', '$http', 'interfaceData',
+angular.module('tempoApp').controller('interfaceCtrl', ['$scope', '$http', 'interfaceData',
 	function($scope, $http, interfaceData) {
 
 	/*  userData withholds all the data from interfaceData  */
