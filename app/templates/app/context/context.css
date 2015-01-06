@@ -2,3 +2,65 @@ a.active {
 	color: #333;
 	font-weight: bold;
 }
+
+.dataToggle {
+	display: inline-block;
+	margin-top:5px;
+	float:right;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.rightSidebar {
+	font-family: Arial,sans-serif;
+	font-size: 14px;
+	width: 25%;
+	padding: 16px;
+	display: table-cell;
+	border-left: 1px solid #cccccc;
+}
+
+.closeRightSidebar {
+	color: #707070;
+	cursor: pointer;
+	float:right;
+}
+
+.aui-page-panel-nav {
+	border-right: 1px solid #cccccc;
+	width: 240px;
+}
+
+.leftSidebarCollapsed {
+	background-color: #f5f5f5;
+	width: 30px;
+}
+
+.leftSidebarExpanded {
+	background-color: #f5f5f5;
+	width: 240px;
+}
+
+.leftSidebar {
+	border-right: 1px solid #cccccc;
+	background-color: #f5f5f5;
+	padding-top:16px;
+	padding-right:4px;
+	padding-left:4px;
+	cursor: pointer;
+	display:table-cell;
+}
+
+.leftSidebarHeader {
+	padding-left:16px;
+}
+
+.expand {
+	color: #707070;
+	float:right;
+	padding-right:4px;
+	padding-left:4px;
+	padding-top:4px;
+}

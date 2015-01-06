@@ -3,8 +3,11 @@ angular.module('tempoApp').controller('contextCtrl', ['$scope', '$http', 'contex
 
 	$scope.app = {
 		"title":"<%= projectName %>",
+		"shortTitle":"<%= projectName %>",
 		"entity":"<%= entity %>",
-		"number": 1
+		"number": 1,
+		"showLeftSidebar":false,
+		"rightSidebarTitle":"Item detail"
 	}
 
 	$scope.customData = interfaceData.getData();

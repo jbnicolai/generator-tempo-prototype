@@ -1,7 +1,7 @@
 <span ng-controller="interfaceCtrl">
 <nav style="margin-top:-1px" class="aui-navgroup aui-navgroup-horizontal">
     <div style="text-align: center;" class="aui-navgroup-inner">
-        <div class="aui-navgroup-primary aui-group aui-group-trio ">
+        <div class="aui-navgroup-primary aui-group aui-group-trio" ng-show="model.userTempoStdNav">
             <div class="aui-item">
                 <ul class="aui-nav">
                     <li><a  style="color:#333;" href="budget-tracking_monthly.html">Filter: No Filter <span class="aui-icon-dropdown"></span></a></li>
@@ -17,9 +17,6 @@
                 </ul>
             </div>
 
-
-
-
             <div style="float: right;"class="aui-item">                  
                 <ul class="aui-nav">
                     <li><a id="view" style="color:#333;" href="#">Export <span class="aui-icon-dropdown"></span></a></li>
@@ -34,11 +31,53 @@
 
 
 <div class="aui-page-panel-inner">
-    <section class="aui-page-panel-content">
-    <h2>{{app.title}}</h2>
+
+	<div class="leftSidebar leftSidebarCollapsed" ng-hide="leftSidebarExpanded">
+		<span class="aui-icon aui-icon-small aui-iconfont-arrows-right expand" ng-click="toggleLeftSidebar()"></span>
+	</div>
+
+	<div class="leftSidebar leftSidebarExpanded" ng-show="leftSidebarExpanded">
+		<span class="aui-nav-heading leftSidebarHeader">Left Sidebar Title</span>
+		<span class="aui-icon aui-icon-small aui-iconfont-arrows-left expand" ng-click="toggleLeftSidebar()">
+		<!--
+			Insert content for left sidebar
+		-->
+		</span>
+	</div>
+
+<!--  leftNavSidebar
+	<div class="aui-page-panel-nav">
+		<nav class="aui-navgroup aui-navgroup-vertical">
+			<ul class="aui-nav">
+				<li><a href="">Item 1</a></li>
+				<li><a href="">Item 2</a></li>
+				<li><a href="">Item 3</a></li>
+				<li><a href="">Item 4</a></li>
+				<li class="aui-nav-selected"><a href="">Item 5</a></li>
+				<li><a href="">Item 6</a></li>
+				<li><a href="">Item 7</a></li>
+			</ul>
+		</nav>
+	</div>
+-->
+
+	<section class="aui-page-panel-content">
+	<!--  
+		Insert content for body here
+	-->
+		<h2>{{app.title}}</h2>
 
 		<div ng-repeat="entry in model.entries">{{entry.name}}</div>
-
+		<div ng-click="toggleRightSidebar()">Open sidebar</div>
 	</section>
+
+	<div class="rightSidebar" ng-show="rightSidebarOpen">
+		<h4 class="inline">Right Sidebar Title</h4>
+		<span class="aui-icon aui-icon-small aui-iconfont-close-dialog closeRightSidebar" ng-click="toggleRightSidebar()">Close</span>
+		<!--
+			Enter awesome content for right sidebar here
+		-->
+	</div>
+
 </div>
 </span>
