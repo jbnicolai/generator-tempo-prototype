@@ -41,7 +41,7 @@ angular.module('tempoApp').controller('contextCtrl', ['$scope', '$http', 'contex
 		}
 	};
 
-	scope.bigNavigationExpanded = false;
+	$scope.bigNavigationExpanded = false;
 	$scope.toggleBigNavigation = function toggleBigNavigation () {
 		$scope.bigNavigationExpanded = $scope.bigNavigationExpanded === true ? false : true;
 	};
