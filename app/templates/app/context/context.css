@@ -33,27 +33,29 @@ a.active {
 	width: 240px;
 }
 
-.leftSidebarCollapsed {
-	background-color: #f5f5f5;
+.leftSidebarCollapsed, .bigNavigationCollapsed {
 	width: 30px;
 }
 
-.leftSidebarExpanded {
+.leftSidebarExpanded, .bigNavigationExpanded {
 	background-color: #f5f5f5;
 	width: 240px;
 }
 
-.leftSidebar {
+.leftSidebar, .bigNavigation {
 	border-right: 1px solid #cccccc;
 	background-color: #f5f5f5;
 	padding-top:16px;
 	padding-right:4px;
 	padding-left:4px;
-	cursor: pointer;
 	display:table-cell;
 }
 
-.leftSidebarHeader {
+.bigNavigation {
+	border-right: 1px solid #cccccc;
+}
+
+.leftSidebarHeader, .bigNavigationHeader {
 	padding-left:16px;
 }
 
@@ -63,4 +65,36 @@ a.active {
 	padding-right:4px;
 	padding-left:4px;
 	padding-top:4px;
+	cursor: pointer;
+}
+
+.helpIcon {
+	padding-top:8px;
+	margin-left:4px;
+	cursor:pointer;
+	color:#999;
+}
+
+.helpIcon.helpActive {
+	color: #f79232;
+}
+
+.aui-help-content {
+	border-left: 4px solid #f79232; 
+	font-size: 16px; 
+	line-height: 1.5; 
+	padding-left: 20px;
+}
+
+.aui-help-content > li {
+	display: inline-block; 
+	font-size: 14px; 
+	margin-bottom: 5px; 
+	margin-right: 10px;
+}
+
+.aui-help-text {
+	margin: 0px 0 0 0; 
+	overflow: hidden; 
+	padding: 0;
 }

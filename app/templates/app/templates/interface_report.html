@@ -1,0 +1,59 @@
+<span ng-controller="interfaceCtrl">
+<nav style="margin-top:-1px" class="aui-navgroup aui-navgroup-horizontal">
+	<div style="text-align: center;" class="aui-navgroup-inner">
+	</div>
+</nav>
+
+<div class="aui-page-panel-inner">
+	<!--  Left navigation sidebar -->
+	<div class="aui-page-panel-nav">
+		<nav class="aui-navgroup aui-navgroup-vertical">
+			<ul class="aui-nav">
+				<li><a href="">Team Utilization</a></li>
+				<li class="aui-nav-selected"><a href="">{{app.shortTitle}}</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!--		Main body		-->
+	<section class="aui-page-panel-content">
+		<h2 ng-init="showHelp===false" ng-show="!showHelp">{{app.title}} <span class="aui-icon aui-icon-small aui-iconfont-error helpIcon" ng-click="showHelp=!showHelp"></span></h2>
+
+		<!-- Help text -->
+		<div class="aui-help aui-help-text" ng-show="showHelp">
+			<div class="aui-help-content">
+				<p style="margin: 5px 0 0 0;">Report help text.</p>
+				<ul class="aui-nav-actions-list" style="">
+					<li><a href="" ng-click="showHelp=!showHelp">Dismiss</a></li>
+					<li><a href="#">Learn more [documentation link needed]</a></li>
+				</ul>
+			</div>
+		</div>
+		<h2 style="border-top: 1px solid #ccc;padding-top: 20px;margin-top: 20px;" ng-show="showHelp">{{app.title}} <span class="aui-icon aui-icon-small aui-iconfont-info helpIcon helpActive" ng-click="showHelp=!showHelp"></span></h2>
+		<p>{{app.description}}</p>
+
+		<!-- Date nav -->
+		<div class="aui-buttons" ng-show="model.userTempoMiniNav">
+			<button class="aui-button tp-previous">&lt;</button>
+			<button class="aui-button " value="Weekly" default="">{{model.period.dates}}</button>
+			<button class="aui-button tp-next">&gt;</button>
+		</div>
+
+		<!--  
+			Insert content for body here
+		-->
+
+		<div ng-repeat="entry in model.entries">{{entry.name}}</div>
+	</section>
+
+	<!-- Right toggle sidebar, open with 'ng-click="toggleRightSidebar()"' -->
+	<div class="rightSidebar" ng-show="rightSidebarOpen">
+		<h4 class="inline">{{app.rightSidebarTitle}}</h4>
+		<span class="aui-icon aui-icon-small aui-iconfont-close-dialog closeRightSidebar" ng-click="toggleRightSidebar()">Close</span>
+		<!--
+			Enter awesome content for right sidebar here
+		-->
+	</div>
+
+</div>
+</span>

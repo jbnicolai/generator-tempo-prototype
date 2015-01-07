@@ -47,6 +47,21 @@
 					<!-- .aui-header-inner-->
 				</nav>
 				<!-- .aui-header -->
+
+				<!-- Big navigation sidebar  -->
+				<div class="bigNavigation bigNavigationCollapsed" ng-hide="bigNavigationExpanded || !app.showBigNavigation">
+					<span class="aui-icon aui-icon-small aui-iconfont-arrows-right expand" ng-click="toggleBigNavigation()"></span>
+				</div>
+
+				<div class="bigNavigation bigNavigationExpanded" ng-hide="!bigNavigationExpanded || !app.showBigNavigation">
+					<span class="aui-nav-heading bigNavigationHeader">Navigation</span>
+					<span class="aui-icon aui-icon-small aui-iconfont-arrows-left expand" ng-click="toggleBigNavigation()">
+					<!--
+						Insert content for big navigation bar
+					-->
+					</span>
+				</div>
+
 			</header>
 			<!-- #header -->
 

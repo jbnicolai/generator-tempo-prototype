@@ -5,11 +5,11 @@ angular.module('tempoApp').controller('interfaceCtrl', ['$scope', '$http', 'inte
 	$scope.userData = interfaceData.getData();
 
 	/*  selectedData is the portion of the data currently beeing viewed  */
-	$scope.model = $scope.contextData;
+	$scope.model = $scope.selectedData;
 
 	/*  Watches changes for selected data and updates  */
 	$scope.$on('dataSelected', function(event, args){
-		$scope.model = $scope.contextData;
+		$scope.model = $scope.selectedData;
 	});
 
 	/*  Toggles sidebar for item details */

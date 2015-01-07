@@ -2,6 +2,7 @@ angular.module('tempoApp').service('interfaceData', function() {
 	var scenarios = {
 		"Golden Path": {
 			"userTempoStdNav":true,
+			"userTempoMiniNav":true,
 			"period": {
 				"name" : "September '14",
 				"dates" : "Sep 1 - Sep 30, 2014"
