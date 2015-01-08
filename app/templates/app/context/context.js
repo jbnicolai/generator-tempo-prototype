@@ -3,19 +3,19 @@ angular.module('tempoApp').controller('contextCtrl', ['$scope', '$http', 'contex
 
 	$scope.app = {
 		"title":"<%= projectName %>",
-		"description":"Insert from Yeoman",
-		"shortTitle":"<%= projectDescription %>",
+		"description":"<%= projectDescription %>",
+		"shortTitle":"<%= projectName %>",
 		"entity":"<%= entity %>",
 		"number": 1,
 		"showLeftSidebar":false,
 		"showBigNavigation":false,
-		"rightSidebarTitle":"Insert from Yeoman",
-		"view":"Insert from Yeoman - reports, configuration or main"
+		"rightSidebarTitle":"Edit in context.js",
+		"view":"<%= viewTemplate %>"
 	}
 
 	$scope.customData = interfaceData.getData();
 	$scope.entity = contextData.getEntities()[$scope.app.entity][$scope.app.number];
-	var navEntity = $scope.app.view === "reports" ? "Reports" : $scope.app.title;
+	var navEntity = $scope.app.view === "report" ? "Reports" : $scope.app.title;
 	$scope.entity.pages.splice(2, 0, navEntity);
 
 
