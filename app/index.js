@@ -51,6 +51,15 @@ module.exports = yeoman.generators.Base.extend({
         "Customer",
         "Advanced"
         ]
+      },{
+      type: "list",
+      name: "viewTemplate",
+      message: "What view template do you wish to start with?",
+      choices: [
+        "configuration",
+        "main",
+        "report"
+        ]
       }];
 
     this.prompt(prompts, function (props) {
@@ -59,6 +68,7 @@ module.exports = yeoman.generators.Base.extend({
       this.projectDescription = props.projectDescription;
       this.projectAuthor = props.projectAuthor;
       this.entity = props.entity;
+      this.viewTemplate = props.viewTemplate.toLowerCase();
       this.log(String(this.anotherOption));
       done();
     }.bind(this));
@@ -75,6 +85,7 @@ module.exports = yeoman.generators.Base.extend({
       this.directory('app', 'app');
       this.template('app/index.html', 'app/index.html');
       this.template('app/context/context.js','app/context/context.js');
+      this.copy("app/templates/interface_" + this.viewTemplate + ".html", "app/interface.html");
     },
 
     projectfiles: function () {

@@ -4,7 +4,7 @@ angular.module('tempoApp').controller('contextCtrl', ['$scope', '$http', 'contex
 	$scope.app = {
 		"title":"<%= projectName %>",
 		"description":"Insert from Yeoman",
-		"shortTitle":"<%= projectName %>",
+		"shortTitle":"<%= projectDescription %>",
 		"entity":"<%= entity %>",
 		"number": 1,
 		"showLeftSidebar":false,
