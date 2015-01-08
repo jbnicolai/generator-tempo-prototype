@@ -5,6 +5,11 @@
 	<div class="aui-page-panel-nav">
 		<nav class="aui-navgroup aui-navgroup-vertical">
 			<ul class="aui-nav">
+				<!--
+					***************************************
+					Insert relevant navigation content here
+					***************************************
+				-->
 				<li><a href="">Team Utilization</a></li>
 				<li class="aui-nav-selected"><a href="">{{app.shortTitle}}</a></li>
 			</ul>
@@ -36,7 +41,9 @@
 		</div>
 
 		<!--  
-			Insert content for body here
+			************************************
+			Insert awesome content for body here
+			************************************
 		-->
 
 		<div ng-repeat="entry in model.entries">{{entry.name}}</div>
@@ -47,7 +54,9 @@
 		<h4 class="inline">{{app.rightSidebarTitle}}</h4>
 		<span class="aui-icon aui-icon-small aui-iconfont-close-dialog closeRightSidebar" ng-click="toggleRightSidebar()">Close</span>
 		<!--
-			Enter awesome content for right sidebar here
+			*********************************************
+			Insert awesome content for right sidebar here
+			*********************************************
 		-->
 	</div>
 

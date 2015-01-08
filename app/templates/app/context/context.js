@@ -16,7 +16,13 @@ angular.module('tempoApp').controller('contextCtrl', ['$scope', '$http', 'contex
 	$scope.customData = interfaceData.getData();
 	$scope.entity = contextData.getEntities()[$scope.app.entity][$scope.app.number];
 	var navEntity = $scope.app.view === "report" ? "Reports" : $scope.app.title;
-	$scope.entity.pages.splice(2, 0, navEntity);
+	if ($scope.app.view === "configuration") {
+		navEntity = "Reports";
+		$scope.entity.pages.splice(3, 0, navEntity);
+	}
+	else {
+		$scope.entity.pages.splice(2, 0, navEntity);
+	}
 
 
 	$scope.isCurrentPage = function isCurrentPage(pageName){
