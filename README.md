@@ -14,12 +14,16 @@ To install generator-tempo-prototype from npm, run:
 npm install -g generator-tempo-prototype
 ```
 
-Finally, initiate the generator:
+Now you are ready to create a tempo-prototype. Create and browse to a folder where you want your new prototype and initiate the generator:
 
 ```bash
 yo tempo-prototype
 ```
 
+Finally, to run the prototype, type:
+```bash
+npm start
+```
 
 ## What is Tempo?
 
