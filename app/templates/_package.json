@@ -6,7 +6,7 @@
   	"scripts": {
 	    "postinstall": "bower install",
 	    "prestart": "npm install",
-  		"start": "node ./live-server.js & subl ./app & subl ./app/interface.html"
+  		"start": "node ./live-server.js"
   	},
 	"dependencies": {
     	"live-server": "^0.6.2"		
