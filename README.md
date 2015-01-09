@@ -21,6 +21,7 @@ yo tempo-prototype
 ```
 
 Finally, to run the prototype, type:
+
 ```bash
 npm start
 ```
