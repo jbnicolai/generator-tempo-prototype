@@ -98,3 +98,8 @@ a.active {
 	overflow: hidden; 
 	padding: 0;
 }
+
+.mini-datepicker {
+	margin-top: 10px;
+}
+

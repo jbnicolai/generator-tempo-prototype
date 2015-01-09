@@ -4,12 +4,11 @@
   "description": "A Yeoman generator for Tempo UI prototype projects",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "arnthorsnaer/generator-tempo-prototype",
-  "author": {
-    "name": "",
-    "email": "",
-    "url": "https://github.com/arnthorsnaer"
+  "repository": {
+    "type": "git",
+    "url": "arnthorsnaer/generator-tempo-prototype"
   },
+  "author": " (https://github.com/arnthorsnaer)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -34,5 +33,10 @@
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "53e0cf12b931a8c11f605171ea404d8a74e3bbe3",
+  "directories": {
+    "test": "test"
   }
 }
